@@ -1,4 +1,4 @@
-        Task 1:BUILD A TOOL TO MONITOR CHANGES IN FILES BY CALCULATING AND COMPARING HASH VALUES.
+        Task 1:BUILD A TOOL TO MONITOR CHANGES IN FILES BY CALCULATING AND COMPARING HASH VALUES (FILE INTEGRITY CHECKER).
 
 
 1.calculate_file_hash(filepath): This function takes a file path as input and calculates its SHA256 hash. It reads the file in chunks to efficiently handle large files and returns the hash as a hexadecimal string.
@@ -18,7 +18,8 @@ This setup allows you to track whether the content of a file has been altered si
 
 
 
-        Task 2: DEVELOP A TOOL TO IDENTIFY COMMON VULNERABILITIES (E.G., SQL INJECTION, XSS) IN WEB APPLICATIONS.
+        Task 2: DEVELOP A TOOL TO IDENTIFY COMMON VULNERABILITIES (E.G., SQL INJECTION, XSS) IN WEB APPLICATIONS (WEB APPLICATION VULNERABILITY SCANNER).
+
 
 The task at hand is to develop a web vulnerability scanning tool using the Python programming language, leveraging popular libraries such as requests for making HTTP requests and BeautifulSoup for parsing HTML content. The overarching objective is to create a functional scanner that can identify common security weaknesses within web applications.
 
