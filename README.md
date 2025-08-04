@@ -1,4 +1,4 @@
-Task 1:
+        Task 1:BUILD A TOOL TO MONITOR CHANGES IN FILES BY CALCULATING AND COMPARING HASH VALUES.
 
 
 1.calculate_file_hash(filepath): This function takes a file path as input and calculates its SHA256 hash. It reads the file in chunks to efficiently handle large files and returns the hash as a hexadecimal string.
@@ -15,4 +15,16 @@ The subsequent code cells demonstrate how to use these functions:
   e.Finally, the dummy file is removed for cleanup.
   
 This setup allows you to track whether the content of a file has been altered since a previous check by comparing their hash values.
+
+
+
+        Task 2: DEVELOP A TOOL TO IDENTIFY COMMON VULNERABILITIES (E.G., SQL INJECTION, XSS) IN WEB APPLICATIONS.
+
+The task at hand is to develop a web vulnerability scanning tool using the Python programming language, leveraging popular libraries such as requests for making HTTP requests and BeautifulSoup for parsing HTML content. The overarching objective is to create a functional scanner that can identify common security weaknesses within web applications.
+
+Our initial focus is on two prevalent vulnerability types: SQL Injection and Cross-Site Scripting (XSS). For SQL Injection, the tool aims to detect vulnerabilities by identifying potential input points on a webpage, such as form fields and URL parameters. It then crafts and sends specially designed payloads (e.g., single quotes, boolean-based conditions) to these input points. By analyzing the web application's response for tell-tale signs like database error messages or unexpected content changes, the scanner can flag potential SQL Injection flaws.
+
+For XSS detection, the tool also examines input fields. It injects simple script payloads into these fields and checks if these scripts are reflected back in the web page's HTML source code. While a full exploitation requires a browser, the reflection of the payload indicates a potential vulnerability where malicious scripts could be executed in a user's browser.
+
+Currently, we have laid the foundation for the scanner by implementing the core functionality to fetch web pages and parse their content. We have integrated basic modules for both SQL Injection and XSS checks, which can identify simple cases of these vulnerabilities. The ongoing development involves enhancing the sophistication of these checks, including using a wider array of payloads and more robust response analysis techniques. Future work will also focus on improving the tool's usability, such as adding options for scanning multiple targets, handling different types of web requests (like POST), and incorporating a clear reporting mechanism to summarize findings. The ultimate goal is to build a practical tool for basic web security testing.
 
