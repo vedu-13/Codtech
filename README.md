@@ -1,4 +1,6 @@
 Task 1:
+
+
 1.calculate_file_hash(filepath): This function takes a file path as input and calculates its SHA256 hash. It reads the file in chunks to efficiently handle large files and returns the hash as a hexadecimal string.
 2.monitor_file_changes(filepath, stored_hash=None): This function is the core of the file monitoring tool. It takes a file path and an optional stored_hash as input.
     a. If no stored_hash is provided (which happens on the first check), it calculates and prints the initial hash of the file and returns the current hash along with None for the change status.
